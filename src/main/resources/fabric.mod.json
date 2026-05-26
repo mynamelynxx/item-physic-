@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "itemglow",
+  "version": "${version}",
+  "name": "Item Glow",
+  "description": "Press a keybind to make all dropped items glow through walls!",
+  "authors": ["itemglow"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/itemglow/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.itemglow.ItemGlowClient"
+    ]
+  },
+  "mixins": [
+    "itemglow.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
